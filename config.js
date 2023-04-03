@@ -5,7 +5,7 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env'
 
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
-}
+} 
 module.exports = {
 ALIVE_MSG: process.env.ALIVE_MSG === undefined ? 'default' : process.env.ALIVE_MSG,
 LANG: process.env.LANG === undefined ? 'EN' : process.env.LANG,
